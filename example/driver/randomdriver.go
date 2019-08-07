@@ -42,6 +42,8 @@ func (d *RandomDriver) HandleReadCommands(deviceName string, protocols map[strin
 	now := time.Now().UnixNano()
 
 	for i, req := range reqs {
+		fmt.Println(req)
+		fmt.Println(req.Type)
 		t := req.Type
 		v, err := rd.value(t)
 		if err != nil {
