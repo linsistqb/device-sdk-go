@@ -66,13 +66,13 @@ LogLevel = "INFO"
     Port = "300"
   [[DeviceList.AutoEvents]]
     Frequency = "2s"
-    OnChange = false
+    OnChange = true
     Resource = "GenerateRandomValue_Int8"
   [[DeviceList.AutoEvents]]
     Frequency = "2s"
-    OnChange = false
+    OnChange = true
     Resource = "GenerateRandomValue_Int16"
   [[DeviceList.AutoEvents]]
     Frequency = "2s"
-    OnChange = false
+    OnChange = true
     Resource = "GenerateRandomValue_Int32"

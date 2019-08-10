@@ -43,7 +43,7 @@ func (d *RandomDriver) HandleReadCommands(deviceName string, protocols map[strin
 
 	for i, req := range reqs {
 		fmt.Println(req)
-		fmt.Println(req.Type)
+//		fmt.Println(req.Type)
 		t := req.Type
 		v, err := rd.value(t)
 		if err != nil {
@@ -59,6 +59,7 @@ func (d *RandomDriver) HandleReadCommands(deviceName string, protocols map[strin
 			cv, _ = dsModels.NewInt32Value(req.DeviceResourceName, now, int32(v))
 		}
 		res[i] = cv
+		fmt.Println(res)
 	}
 
 	return res, nil
